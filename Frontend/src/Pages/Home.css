@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+  }
+  
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full screen height */
+    width: 100vw;  /* Full screen width */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .header-icons span {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Scrollable Content */
+  .content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-bottom: 60px; /* Space for bottom nav */
+  }
+  
+  .welcome-section {
+    background: linear-gradient(to bottom, #f2a900, #d38300);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .task-btn, .bookmark-btn {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .lesson-section {
+    background-color: #292929;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .continue-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .programs, .new-programs {
+    padding: 10px;
+  }
+  
+  .programs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .course-card {
+    background-color: #383838;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .course-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+  
+  /* Locked Features */
+  .locked-sections {
+    padding: 10px;
+  }
+  
+  .locked-card {
+    background-color: #292929;
+    
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .lock-icon{
+    color: #d38300;
+  }
+  
+  /* Bottom Navigation */
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1e1e1e;
+    padding: 10px 0;
+    position: absolute;
+    /* bottom: 0; */
+    width: 100vw;
+  }
+  
+  .nav-item {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .nav-item.active {
+    color: orange;
+  }
+  

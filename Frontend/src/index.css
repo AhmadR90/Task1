@@ -1,0 +1,288 @@
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:max-content;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  padding-top: 40px;
+  margin-top: 90px;
+} */
+/* .container {
+  width: 100%;
+  max-width: 400px;
+  
+  height: 100vh;
+  display: flex
+;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+.form-box {
+  /* background-color: #0f0f11; */
+  padding: 40px;
+  border-radius: 10px;
+  width: 90%;
+  height: 90%;
+  max-width: 375px;
+  margin-top: 30px ;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.login-link {
+  color: orange;
+  cursor: pointer;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-group input {
+  width: 90%;
+  padding: 10px;
+  
+  /* border: 1px solid gray; */
+  background-color: transparent;
+  color: white;
+}
+
+.gender-options {
+  display: flex;
+  gap: 20px;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: orange;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-btn:hover {
+  background-color: darkorange;
+}
+
+@media (max-width: 480px) {
+  .form-box {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .input-group input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .register-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+.checkbox{
+  margin-left: -90px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .form-box {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form-box {
+    max-width: 80%;
+  }
+}
+.otp-form-box {
+  padding: 30px;
+}
+
+.otp-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.otp-input {
+  width: 45px;
+  height: 50px;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid gray;
+  background-color: transparent;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .otp-container {
+    gap: 5px;
+  }
+  .otp-input {
+    width: 40px;
+    height: 45px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .otp-container {
+    gap: 5px;
+  }
+  .otp-input {
+    width: 38px;
+    height: 42px;
+    font-size: 18px;
+  }
+  .submit-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+.pricing-box {
+  padding: 30px;
+  margin:20px;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.toggle-button {
+  background: transparent;
+  color: white;
+  border: 1px solid orange;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.toggle-button.active {
+  background: orange;
+  color: black;
+}
+
+.pricing-card {
+  background: #1a1a1d;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+  text-align: left;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.pricing-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pricing-price {
+  font-size: 28px;
+  font-weight: bold;
+  color: orange;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.pricing-features li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.pricing-features .disabled {
+  color: gray;
+  text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+  .pricing-box {
+    padding: 20px;
+  }
+  .toggle-button {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+  .pricing-card {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-box {
+    padding: 15px;
+  }
+  .toggle-button {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+  .pricing-card {
+    width: 100%;
+    padding: 10px;
+  }
+  .register-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+

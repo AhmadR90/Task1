@@ -1,0 +1,254 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .course-detail-container {
+    background-color: #121212;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px; /* Prevent overlap by adding space for the bottom nav */
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #1e1e1e;
+  }
+  
+  .header h2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .back-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Course Banner */
+  .course-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Course Info */
+  .course-info {
+    padding: 15px 20px;
+  }
+  
+  .course-label {
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  .course-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Tabs */
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    background: #1e1e1e;
+    padding: 10px 0;
+  }
+  
+  .tabs button {
+    background: none;
+    border: none;
+    color: #bbb;
+    font-size: 14px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .tabs button.active {
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid #ff9900;
+  }
+  
+  /* Lessons Section */
+  .lessons-section {
+    padding: 15px;
+  }
+  
+  .chapter {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .chapter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .chapter-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .toggle-btn {
+    background: #ff9900;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  /* Lesson Cards */
+  .lessons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .lesson-card {
+    display: flex;
+    align-items: center;
+    background: #292929;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .lesson-card:hover {
+    background: #ff9900;
+  }
+  
+  .lesson-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    margin-right: 10px;
+  }
+  
+  .lesson-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .lesson-title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .lesson-duration {
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  /* Bottom Navigation */
+  .bottom-nav {
+    position: relative;
+    bottom: 0;
+    
+    height: 60px; /* Set fixed height */
+    background: #1e1e1e;
+    display: flex;
+    justify-content: space-around;
+    padding: 15cdpx 0;
+    /* z-index: 100;  */
+    /* Ensure it stays on top */
+  }
+  
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #bbb;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .nav-item:hover,
+  .nav-item.active {
+    color: #ff9900;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .course-title {
+      font-size: 16px;
+    }
+  
+    .lesson-card img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .tabs button {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .nav-item {
+      font-size: 10px;
+    }
+  }
+  
+  /* Content Section */
+  .content-section {
+    padding: 15px;
+    color: white;
+    margin-bottom: 60px; /* Extra margin to prevent overlapping */
+  }
+  
+  .overview-section {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .resources-section {
+    background: #292929;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    background: #ff9900;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .download-btn:hover {
+    background: #e58c00;
+  }
+  
